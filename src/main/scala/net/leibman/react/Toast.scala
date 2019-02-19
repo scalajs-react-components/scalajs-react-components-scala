@@ -130,7 +130,7 @@ object Toast {
 
   private val toastRef = Ref.toScalaComponent(component)
 
-  def render(): TagMod = toastRef.component()()
+  def render(): TagMod = component.withRef(toastRef)()
 
   def warning(message: VdomNode,
               duration: Duration = 6 seconds,

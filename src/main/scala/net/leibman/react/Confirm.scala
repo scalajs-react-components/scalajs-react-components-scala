@@ -72,7 +72,7 @@ object Confirm {
 
   private val ref = Ref.toScalaComponent(component)
 
-  def render(): TagMod = ref.component()()
+  def render(): TagMod = component.withRef(ref)()
 
   def confirm(question: String,
               onConfirm: () => Callback,
