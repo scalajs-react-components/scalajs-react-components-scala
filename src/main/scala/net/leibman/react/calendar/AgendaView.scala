@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.leibman.semanticcalendar
+package net.leibman.react.calendar
 
 import java.time.format.DateTimeFormatter
 import java.time.{ DateTimeException, LocalDate }
@@ -30,8 +30,8 @@ import japgolly.scalajs.react.{
   ReactEventFromInput,
   ScalaComponent
 }
-import net.leibman.semanticcalendar.SemanticCalendar.Nav.Nav
-import net.leibman.semanticcalendar.SemanticCalendar._
+import net.leibman.react.calendar.SemanticCalendar.Nav.Nav
+import net.leibman.react.calendar.SemanticCalendar._
 
 import scala.concurrent.Future
 import scala.scalajs.js

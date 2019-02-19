@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.leibman.semanticcalendar
+package net.leibman.react.calendar
 
 import java.time.temporal.ChronoField
 import java.time.{ LocalDate, LocalDateTime, LocalTime }
@@ -23,8 +23,8 @@ import japgolly.scalajs.react.component.Scala
 import japgolly.scalajs.react.extra.StateSnapshot
 import japgolly.scalajs.react.vdom.html_<^._
 import japgolly.scalajs.react.{ BackendScope, Callback, CallbackTo, ReactDOM, Ref, ScalaComponent }
-import net.leibman.semanticcalendar.SemanticCalendar.Nav.Nav
-import net.leibman.semanticcalendar.SemanticCalendar.{ CalendarProps, CalendarState, Nav, View }
+import net.leibman.react.calendar.SemanticCalendar.Nav.Nav
+import net.leibman.react.calendar.SemanticCalendar.{ CalendarProps, CalendarState, Nav, View }
 import org.scalajs.dom.html
 
 import scala.concurrent.Future

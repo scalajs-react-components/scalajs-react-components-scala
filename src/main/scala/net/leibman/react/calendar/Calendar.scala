@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.leibman.semanticcalendar
+package net.leibman.react.calendar
 
 import java.time.format.DateTimeFormatter
 import java.time.{ LocalDate, LocalDateTime, LocalTime }
@@ -123,14 +123,14 @@ object SemanticCalendar {
         js.undefined
   ) {
     //Default methods
-    private[semanticcalendar] def defaultEventClicked(
+    private[calendar] def defaultEventClicked(
         e: E,
         stateSnapshot: StateSnapshot[CalendarState[E]]
     ): Callback =
       Callback.log("Called defaultEventClicked") << stateSnapshot.modState(
         _.copy(selectedEvent = Option(e))
       )
-    private[semanticcalendar] def defaultEventDoubleClicked(
+    private[calendar] def defaultEventDoubleClicked(
         e: E,
         stateSnapshot: StateSnapshot[CalendarState[E]]
     ): Callback =
